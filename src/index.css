@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Playful kid-friendly color system */
+    --background: 200 50% 98%;
+    --foreground: 220 40% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 40% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 40% 20%;
+
+    /* Bright, friendly primary color - cheerful purple */
+    --primary: 265 85% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft secondary for backgrounds */
+    --secondary: 200 50% 95%;
+    --secondary-foreground: 220 40% 20%;
+
+    --muted: 200 30% 92%;
+    --muted-foreground: 220 20% 50%;
+
+    /* Fun accent color - sunny orange */
+    --accent: 35 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Success/healthy - vibrant green */
+    --success: 145 70% 50%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning/limit - playful yellow */
+    --warning: 45 100% 55%;
+    --warning-foreground: 30 40% 20%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 20% 88%;
+    --input: 220 20% 88%;
+    --ring: 265 85% 65%;
+
+    --radius: 1rem;
+
+    /* Game-specific colors */
+    --fruits: 340 85% 65%;
+    --vegetables: 145 70% 50%;
+    --grains: 40 90% 60%;
+    --proteins: 15 85% 60%;
+    --dairy: 200 70% 70%;
+    --limit: 25 95% 55%;
+
+    /* Gradients */
+    --gradient-bg: linear-gradient(135deg, hsl(200 60% 95%), hsl(280 60% 95%));
+    --gradient-plate: linear-gradient(145deg, hsl(0 0% 100%), hsl(200 30% 98%));
+    
+    /* Animations */
+    --bounce-duration: 0.5s;
+    --celebration-scale: 1.2;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
